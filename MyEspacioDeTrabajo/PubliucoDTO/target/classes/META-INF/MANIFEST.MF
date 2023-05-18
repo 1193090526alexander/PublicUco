@@ -1,6 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 17
-Implementation-Title: PubliucoDTO
-Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Helmer
+Build-Jdk: 17.0.6
 Created-By: Maven Integration for Eclipse
 

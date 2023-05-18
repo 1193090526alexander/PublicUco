@@ -1,0 +1,17 @@
+package co.edu.uco.publiuco.dto;
+
+import java.util.UUID;
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+
+
+public class PaisDTO {
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private UUID codigo;
+	private String nombre;
+
+}
