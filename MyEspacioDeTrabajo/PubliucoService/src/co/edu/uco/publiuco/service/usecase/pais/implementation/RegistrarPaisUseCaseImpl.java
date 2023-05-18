@@ -2,6 +2,7 @@ package co.edu.uco.publiuco.service.usecase.pais.implementation;
 
 import java.util.UUID;
 
+import org.hibernate.cache.spi.support.EntityNonStrictReadWriteAccess;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -48,6 +49,7 @@ public class RegistrarPaisUseCaseImpl implements RegistrarPaisUseCase{
     }
     private void generarUUID() {
     	UUID uuid = UUID.randomUUID();
+    	EntityNonStrictReadWriteAccess
     }
 
 }
