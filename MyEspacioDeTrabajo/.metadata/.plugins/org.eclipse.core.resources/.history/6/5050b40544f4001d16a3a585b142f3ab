@@ -1,0 +1,19 @@
+package co.edu.uco.publiuco.service.usecase.ciudad.implementation;
+
+import org.springframework.stereotype.Service;
+
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.usecase.ciudad.EliminarCiudadUseCase;
+
+@Service
+public class EliminarCiudadUseCaseImpl implements EliminarCiudadUseCase {
+
+	
+	private 
+	@Override
+	public void execute(CiudadDomain domain) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

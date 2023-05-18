@@ -1,0 +1,14 @@
+package co.edu.uco.publiuco.dto;
+
+import java.util.UUID;
+
+import lombok.*;
+
+public class PaisDTO {
+	
+	
+	@Not
+	private UUID codigo;
+	private String nombre;
+
+}

@@ -1,0 +1,13 @@
+package co.edu.uco.publiuco.dto;
+
+import java.util.UUID;
+
+import jakarta.persistence.Table;
+
+public class PaisDTO {
+	private UUID codigo;
+	@Table ("sjdnf")
+	@Pattern(regexp="+", message="El nombre no debe de contener letras")
+	private String nombre;
+
+}

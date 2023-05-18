@@ -1,0 +1,18 @@
+package co.edu.uco.publiuco.service.facade.ciudad.implementation;
+
+import co.edu.uco.publiuco.dto.CiudadDTO;
+import co.edu.uco.publiuco.service.facade.ciudad.RegistrarCiudadUseCaseFacade;
+
+public class RegistarCiudadUseCaseFacadeImpl implements RegistrarCiudadUseCaseFacade{
+
+	@Override
+	public void excecute(CiudadDTO dto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
+
+
+}

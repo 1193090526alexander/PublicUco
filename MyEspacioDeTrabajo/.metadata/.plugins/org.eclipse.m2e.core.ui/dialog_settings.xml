@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="co.edu.uco.publiuco"/>
+			<item value="co.edu.uco"/>
+		</list>
+		<list key="name">
+			<item value="PubliucoCrossCutting"/>
+			<item value="PubliucoDTO"/>
+			<item value="PubliucoEntity"/>
+			<item value="PubliucoRepository"/>
+			<item value="PubliucoService"/>
+			<item value="UcoCrossCutting"/>
+		</list>
+		<list key="artifactId">
+			<item value="PubliucoCrossCutting"/>
+			<item value="PubliucoDTO"/>
+			<item value="PubliucoEntity"/>
+			<item value="PubliucoRepository"/>
+			<item value="PubliucoService"/>
+			<item value="UcoCrossCutting"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

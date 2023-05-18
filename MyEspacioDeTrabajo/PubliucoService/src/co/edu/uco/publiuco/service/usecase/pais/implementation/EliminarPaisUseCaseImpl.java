@@ -1,0 +1,34 @@
+package co.edu.uco.publiuco.service.usecase.pais.implementation;
+
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import co.edu.uco.publiuco.repository.CiudadRepository;
+import co.edu.uco.publiuco.repository.PaisRepository;
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.domain.PaisDomain;
+import co.edu.uco.publiuco.service.usecase.ciudad.EliminarCiudadUseCase;
+import co.edu.uco.publiuco.service.usecase.pais.EliminarPaisUseCase;
+
+@Service
+public class EliminarPaisUseCaseImpl implements EliminarPaisUseCase {
+
+	@Autowired
+	private PaisRepository repository;
+
+	@Override
+	public void execute(PaisDomain domain) {
+	      
+	       validarPaisExistente(domain.getCodigo());
+	       repository.deleteById(domain.getCodigo());
+	}
+    private void validarPaisExistente(UUID codigo) {
+        if (!repository.existsById(codigo)) {
+            throw new IllegalArgumentException("El país con el UUID proporcionado no existe");
+        }
+    }
+
+
+}

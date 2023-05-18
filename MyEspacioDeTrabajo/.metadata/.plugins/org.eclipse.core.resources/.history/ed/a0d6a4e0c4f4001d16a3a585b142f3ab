@@ -1,0 +1,29 @@
+package co.edu.uco.publiuco.service.usecase.ciudad.implementation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import co.edu.uco.publiuco.entity.CiudadEntity;
+import co.edu.uco.publiuco.repository.CiudadRepository;
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase;
+
+@Service
+public class RegistrarCiudadUseCaseImpl implements RegistrarCiudadUseCase{
+	
+	@Autowired
+	private CiudadRepository repository;
+
+	@Override
+	public void excecute(CiudadDomain domain) {
+		
+		//Creas las reglas de negocio 
+		//specification pattern o un validator pattern
+		
+		//Aqui deberas crear el emsamblador 
+		CiudadEntity entity  = null;
+		repository.save(entity);
+		
+	}
+
+}

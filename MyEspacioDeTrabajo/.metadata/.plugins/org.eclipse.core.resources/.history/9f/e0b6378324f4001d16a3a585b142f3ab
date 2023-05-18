@@ -1,0 +1,14 @@
+package co.edu.uco.publiuco.service.usecase.ciudad.implementation;
+
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase;
+
+public class RegistrarCiudadUseCaseImpl implements RegistrarCiudadUseCase{
+
+	@Override
+	public void excecute(CiudadDomain domain) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

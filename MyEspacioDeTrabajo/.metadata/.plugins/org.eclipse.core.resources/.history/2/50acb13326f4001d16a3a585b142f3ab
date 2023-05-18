@@ -1,0 +1,7 @@
+package co.edu.uco.publiuco.service.usecase;
+
+public interface UseCaseList <D>{
+	
+	List<D> execute (D domain);
+ 
+}

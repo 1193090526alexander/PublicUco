@@ -1,0 +1,11 @@
+
+
+java:S1128"LRemove this unused import 'co.edu.uco.publiuco.repository.CiudadRepository'.(›Æˆ°8çÝ¿¹‚1HîRMINORZ
+CODE_SMELL
+•
+java:S1128"]Remove this unused import 'co.edu.uco.publiuco.service.usecase.ciudad.EliminarCiudadUseCase'.(ÑƒÞÖýÿÿÿÿ8çÝ¿¹‚1HòRMINORZ
+CODE_SMELL
+
+java:S1128
+"LRemove this unused import 'co.edu.uco.publiuco.service.domain.CiudadDomain'.(¤Ý“þ8çÝ¿¹‚1HðRMINORZ
+CODE_SMELL

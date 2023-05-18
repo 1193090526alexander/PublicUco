@@ -1,0 +1,16 @@
+
+b
+java:S1135"2Complete the task associated to this TODO comment.(ª†ÊûˇˇˇˇˇHﬁRINFOZ
+CODE_SMELL
+
+java:S1128"LRemove this unused import 'co.edu.uco.publiuco.service.domain.CiudadDomain'.(§›ì˛8≈√ªπÇ1H‰RMINORZ
+CODE_SMELL
+
+java:S1128	"LRemove this unused import 'co.edu.uco.publiuco.repository.CiudadRepository'.(õ∆à∞8≈√ªπÇ1H‚RMINORZ
+CODE_SMELL
+ê
+java:S1128"]Remove this unused import 'co.edu.uco.publiuco.service.usecase.ciudad.ListarCiudadesUseCase'.(öÑÑ“8≈√ªπÇ1HÊRMINORZ
+CODE_SMELL
+W
+java:S1168"+Return an empty collection instead of null.(•πÔçHﬂRMAJORZ
+CODE_SMELL

@@ -1,0 +1,34 @@
+package co.edu.uco.publiuco.service.usecase.departamento.implementation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import co.edu.uco.publiuco.entity.CiudadEntity;
+import co.edu.uco.publiuco.entity.PaisEntity;
+import co.edu.uco.publiuco.repository.CiudadRepository;
+import co.edu.uco.publiuco.repository.DepartamentoRepository;
+import co.edu.uco.publiuco.repository.PaisRepository;
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.domain.DepartamentoDomain;
+import co.edu.uco.publiuco.service.domain.PaisDomain;
+import co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase;
+import co.edu.uco.publiuco.service.usecase.departamento.RegistrarDepartamentoUseCase;
+import co.edu.uco.publiuco.service.usecase.pais.RegistrarPaisUseCase;
+
+@Service
+public class RegistrarDepartamentoUseCaseImpl implements RegistrarDepartamentoUseCase{
+	
+	@Autowired
+	private DepartamentoRepository repository;
+
+	@Override
+	public void excecute(DepartamentoDomain domain) {
+		//Creas las reglas de negocio 
+		//specification pattern o un validator pattern
+		
+		//Aqui deberas crear el emsamblador 
+		PaisEntity entity = null;
+		repository.save(entity);b
+		
+	}
+}

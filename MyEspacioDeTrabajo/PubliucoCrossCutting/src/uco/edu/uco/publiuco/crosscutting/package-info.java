@@ -1,0 +1,1 @@
+package uco.edu.uco.publiuco.crosscutting;

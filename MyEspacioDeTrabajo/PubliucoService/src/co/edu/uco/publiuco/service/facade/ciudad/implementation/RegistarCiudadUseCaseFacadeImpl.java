@@ -1,0 +1,27 @@
+package co.edu.uco.publiuco.service.facade.ciudad.implementation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import co.edu.uco.publiuco.dto.CiudadDTO;
+import co.edu.uco.publiuco.service.domain.CiudadDomain;
+import co.edu.uco.publiuco.service.facade.ciudad.RegistrarCiudadUseCaseFacade;
+import co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase;
+
+@Service
+@Transactional
+public class RegistarCiudadUseCaseFacadeImpl implements RegistrarCiudadUseCaseFacade{
+
+	@Autowired
+	private RegistrarCiudadUseCase usecase;
+	                    
+	@Override
+	public void excecute(CiudadDTO dto) {
+		//Sirve el asembler para llevar el DTO a domain
+		
+		CiudadDomain domain = null;
+		
+		usecase.excecute(domain);		
+	}
+}

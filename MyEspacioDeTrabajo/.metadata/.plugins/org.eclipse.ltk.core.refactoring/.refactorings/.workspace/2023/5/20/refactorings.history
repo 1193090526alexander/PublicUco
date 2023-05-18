@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PubliUcoCrossCutting&apos; to &apos;PubliucoCrossCutting&apos;" description="Rename resource &apos;PubliUcoCrossCutting&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/PubliUcoCrossCutting" name="PubliucoCrossCutting" stamp="1684120544832" updateReferences="true"/>
+</session>

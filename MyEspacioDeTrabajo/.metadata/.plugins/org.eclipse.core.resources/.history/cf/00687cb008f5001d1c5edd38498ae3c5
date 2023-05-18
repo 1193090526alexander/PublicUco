@@ -1,0 +1,16 @@
+package co.edu.uco.publiuco.dto;
+
+import java.util.UUID;
+
+import lombok.Data;
+import lombok.NonNull;
+@Data
+@NonNull
+public class CiudadDTO {
+	
+	private UUID codigo;
+	@
+	private String nombre;
+	private DepartamentoDTO departamento;
+
+}
