@@ -1,28 +1,28 @@
 
-
-java:S1128"ZRemove this unused import 'co.edu.uco.publiuco.service.usecase.pais.RegistrarPaisUseCase'.(ÚÂ¯ê8ÿ·Õ¹‚1H×RMINORZ
+Š
+java:S1128"^Remove this unused import 'co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase'.(ÁñÚÜHÌRMINORZ
 CODE_SMELL
-x
-java:S1128	"LRemove this unused import 'co.edu.uco.publiuco.repository.CiudadRepository'.(›Æˆ°H¹RMINORZ
-CODE_SMELL
-x
-java:S1128"LRemove this unused import 'co.edu.uco.publiuco.service.domain.CiudadDomain'.(¤İ“şH»RMINORZ
-CODE_SMELL
-z
-java:S1128"BRemove this unused import 'co.edu.uco.publiuco.entity.PaisEntity'.(ÓÜÿ´şÿÿÿÿ8ÿ·Õ¹‚1HÑRMINORZ
+‚
+java:S1128"JRemove this unused import 'co.edu.uco.publiuco.repository.PaisRepository'.(Ò¿æ€ûÿÿÿÿ8ÿ·Õ¹‚1HÎRMINORZ
 CODE_SMELL
 ¼
-java:S4449 "ŠAnnotate the parameter with @javax.annotation.Nullable in method 'save' declaration, or make sure that null can not be passed as argument.(˜ĞØıÿÿÿÿHÌRMAJORZ
+java:S4449 "ŠAnnotate the parameter with @javax.annotation.Nullable in method 'save' declaration, or make sure that null can not be passed as argument.(˜ĞØıÿÿÿÿHĞRMAJORZ
 CODE_SMELL
-Š
-java:S1128"^Remove this unused import 'co.edu.uco.publiuco.service.usecase.ciudad.RegistrarCiudadUseCase'.(ÁñÚÜH½RMINORZ
+z
+java:S1128"BRemove this unused import 'co.edu.uco.publiuco.entity.PaisEntity'.(ÓÜÿ´şÿÿÿÿ8ÿ·Õ¹‚1HÒRMINORZ
+CODE_SMELL
+x
+java:S1128	"LRemove this unused import 'co.edu.uco.publiuco.repository.CiudadRepository'.(›Æˆ°HÔRMINORZ
+CODE_SMELL
+‚
+java:S1128"JRemove this unused import 'co.edu.uco.publiuco.service.domain.PaisDomain'.(ªÀíıÿÿÿÿ8ÿ·Õ¹‚1HÖRMINORZ
 CODE_SMELL
 u
-java:S1128"DRemove this unused import 'co.edu.uco.publiuco.entity.CiudadEntity'.(ê¤”’üÿÿÿÿH·RMINORZ
+java:S1128"DRemove this unused import 'co.edu.uco.publiuco.entity.CiudadEntity'.(ê¤”’üÿÿÿÿHØRMINORZ
 CODE_SMELL
-‚
-java:S1128"JRemove this unused import 'co.edu.uco.publiuco.repository.PaisRepository'.(Ò¿æ€ûÿÿÿÿ8ÿ·Õ¹‚1HÓRMINORZ
+
+java:S1128"ZRemove this unused import 'co.edu.uco.publiuco.service.usecase.pais.RegistrarPaisUseCase'.(ÚÂ¯ê8ÿ·Õ¹‚1HÚRMINORZ
 CODE_SMELL
-‚
-java:S1128"JRemove this unused import 'co.edu.uco.publiuco.service.domain.PaisDomain'.(ªÀíıÿÿÿÿ8ÿ·Õ¹‚1HÕRMINORZ
+x
+java:S1128"LRemove this unused import 'co.edu.uco.publiuco.service.domain.CiudadDomain'.(¤İ“şHÜRMINORZ
 CODE_SMELL

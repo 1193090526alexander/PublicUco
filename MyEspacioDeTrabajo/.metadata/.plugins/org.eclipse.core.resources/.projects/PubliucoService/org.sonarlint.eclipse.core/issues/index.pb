@@ -57,3 +57,5 @@ m
 Osrc/co/edu/uco/publiuco/service/facade/ciudad/RegistrarCiudadUseCaseFacade.java,e\6\e63f833db5c2b048c4424303d8fe3207731fc2f2
 ‘
 asrc/co/edu/uco/publiuco/service/facade/ciudad/implementation/RegistarCiudadUseCaseFacadeImpl.java,6\1\61de03dcc7cb9a29264f8c28b3c520959cc2869d
+q
+Asrc/co/edu/uco/publiuco/service/emsambler/GenericModelMapper.java,f\b\fb4cbac0cf0e56f7b397c5e4421c164abbcf816e

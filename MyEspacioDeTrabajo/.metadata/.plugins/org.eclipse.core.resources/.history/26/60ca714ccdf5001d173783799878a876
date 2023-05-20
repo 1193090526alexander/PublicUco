@@ -1,0 +1,18 @@
+package co.edu.uco.publiuco.service.emsambler;
+
+import org.modelmapper.ModelMapper;
+
+public class GenericModelMapper {
+
+	private final ModelMapper mapper = new ModelMapper();
+	private static modelMaping instance;
+	
+	private modelMaping() {
+		// TODO Auto-generated constructor stub
+	}
+	public static modelMaping singleInstance() {
+		if(instance == null) {
+			instance = new modelMaping()
+		}
+	}
+}

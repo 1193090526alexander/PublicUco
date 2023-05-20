@@ -1,11 +1,10 @@
 
-b
-java:S1068"*Remove this unused "codigo" private field.(ûõÈÂÿÿÿÿÿ8÷–í1HÒRMAJORZ
-CODE_SMELL
-b
-java:S1068	"*Remove this unused "nombre" private field.(µÿï„ùÿÿÿÿ8÷–í1HÔRMAJORZ
-CODE_SMELL
 `
-java:S1068
-"(Remove this unused "pais" private field.(Ûİ¯èşÿÿÿÿ8÷–í1HÖRMAJORZ
+java:S1068	"(Remove this unused "pais" private field.(Ûİ¯èşÿÿÿÿ8÷–í1H§RMAJORZ
+CODE_SMELL
+b
+java:S1068"*Remove this unused "codigo" private field.(ûõÈÂÿÿÿÿÿ8 úìú‚1H©RMAJORZ
+CODE_SMELL
+b
+java:S1068"*Remove this unused "nombre" private field.(µÿï„ùÿÿÿÿ8÷–í1H«RMAJORZ
 CODE_SMELL

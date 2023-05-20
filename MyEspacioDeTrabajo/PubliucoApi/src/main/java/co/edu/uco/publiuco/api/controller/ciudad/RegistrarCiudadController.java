@@ -12,7 +12,7 @@ import co.edu.uco.publiuco.dto.CiudadDTO;
 import co.edu.uco.publiuco.service.facade.ciudad.RegistrarCiudadUseCaseFacade;
 
 @RestController
-@RequestMapping ("publiuco/api/v1/ciudad")
+@RequestMapping ("/publiuco/api/v1/ciudad")
 public class RegistrarCiudadController {
 	
 	@Autowired

@@ -1,0 +1,25 @@
+package co.edu.uco.publiuco.entity;
+import java.util.UUID;
+
+import javax.persistence.*;
+
+import org.hibernate.annotations.GenericGenerator;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
+@EntityScan
+@EnableAutoConfiguration
+@Table(name = "ciudad")
+public class CiudadEntity {
+	@Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "codigo", columnDefinition = "BINARY(16)")
+	private UUID codigo;
+	@Column(name = "nombre", length = 50, nullable = false, unique = true)
+	private String nombre;
+	@ManyToOne
+	@JoinColumn(name="departamento")
+	private DepartamentoEntity departamento;
+}

@@ -1,0 +1,13 @@
+package co.edu.uco.publiuco.service.emsambler;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GenericModelMapper {
+
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	}
+
+}

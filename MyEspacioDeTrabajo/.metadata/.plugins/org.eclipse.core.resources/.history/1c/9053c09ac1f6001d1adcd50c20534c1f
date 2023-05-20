@@ -1,0 +1,25 @@
+package co.edu.uco.publiuco.entity;
+import java.util.UUID;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "ciudad")
+public class CiudadEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column (name = "codigo")
+	private UUID codigo;
+
+	@Column(name = "nombre")
+	private String nombre;
+	@ManyToOne
+	@JoinColumn (name = "departamento")
+	private DepartamentoEntity departamento;
+
+}

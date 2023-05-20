@@ -1,0 +1,16 @@
+package co.edu.uco.publiuco.api.init;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+@EntityScan("co.edu.uco.publiuco.entity")
+@EnableAutoConfiguration
+@SpringBootApplication
+public class PubliucoApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PubliucoApiApplication.class, args);
+	}
+
+}

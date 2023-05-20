@@ -2,13 +2,15 @@ package co.edu.uco.publiuco.service.usecase.pais.implementation;
 
 import java.util.UUID;
 
-
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import co.edu.uco.publiuco.dto.PaisDTO;
 import co.edu.uco.publiuco.entity.PaisEntity;
 import co.edu.uco.publiuco.repository.PaisRepository;
 import co.edu.uco.publiuco.service.domain.PaisDomain;
+import co.edu.uco.publiuco.service.emsambler.GenericModelMapper;
 import co.edu.uco.publiuco.service.usecase.pais.RegistrarPaisUseCase;
 
 
@@ -18,34 +20,20 @@ public class RegistrarPaisUseCaseImpl implements RegistrarPaisUseCase{
 	
 	@Autowired
 	private PaisRepository repository;
+	
+	@Autowired
+	private ModelMapper modelMapper;
+	
+	@Autowired
+	private GenericModelMapper mapper;
 
 	public void excecute(PaisDomain domain) {
 		//Creas las reglas de negocio 
 		//specification pattern o un validator pattern
-		validarNombrePais(domain.getNombre());
-		generarUUID();
+	
 		//Aqui deberas crear el emsamblador 
-		PaisEntity entity = null;
-		repository.save(entity);
-		
+		PaisEntity entity = modelMapper.map(domain, PaisEntity.class);
+		entity = repository.save(entity);
+		PaisDTO paisDTO = modelMapper.map(entity, PaisDTO.class);
 	}
-    private void validarNombrePais(String nombre) {
-        if (nombre == null || nombre.isEmpty()) {
-            throw new IllegalArgumentException("El nombre de la pais es obligatorio");
-        }
-
-        if (!nombre.matches("^[a-zA-Z]+$")) {
-            throw new IllegalArgumentException("El nombre de la pais solo puede contener letras");
-        }
-
-        if (nombre.length() > 50) {
-            throw new IllegalArgumentException("El nombre de la pais no puede exceder los 50 caracteres");
-        }
-        
-    }
-    private void generarUUID() {
-    	UUID uuid = UUID.randomUUID();
-    	
-    }
-
 }

@@ -2,33 +2,19 @@ package co.edu.uco.publiuco.entity;
 
 import java.util.UUID;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table (name = "Pais")
+@Table(name="pais")
 public class PaisEntity {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "codigo")
 	private UUID codigo;
-	@NotBlank(message = "El nombre de la pais es obligatorio")
-	@Size(max = 50, message = "El nombre de la pais no puede exceder los 50 caracteres")
-    @Pattern(regexp = "^[a-zA-Z]+$", message = "El nombre de la pais solo puede contener letras")
-	@Column(name = "nombre")
 	private String nombre;
-
 }

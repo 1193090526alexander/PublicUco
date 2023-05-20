@@ -1,0 +1,18 @@
+package co.edu.uco.publiuco.entity;
+import java.util.UUID;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "ciudad")
+public class CiudadEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column (name = "codigo")
+	private UUID codigo;
+	@Column(name = "nombre")
+	private String nombre;
+	@ManyToOne
+	@JoinColumn(name="departamento")
+	private DepartamentoEntity departamento;
+}

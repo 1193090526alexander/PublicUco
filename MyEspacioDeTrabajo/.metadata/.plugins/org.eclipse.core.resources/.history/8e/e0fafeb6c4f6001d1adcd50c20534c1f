@@ -1,0 +1,15 @@
+package co.edu.uco.publiuco.entity;
+
+import java.util.UUID;
+import jakarta.persistence.*;
+@Entity
+@Table(name = "pais")
+public class PaisEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "codigo")
+	private UUID codigo;
+	@Column(name = "nombre")
+	private String nombre;
+
+}

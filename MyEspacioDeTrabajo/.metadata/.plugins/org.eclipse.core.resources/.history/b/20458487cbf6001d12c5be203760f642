@@ -1,0 +1,23 @@
+package co.edu.uco.publiuco.entity;
+
+import java.util.UUID;
+
+import javax.persistence.*;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name= "departamento")
+public class DepartamentoEntity {
+	@Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "codigo", columnDefinition = "BINARY(16)")
+	
+	private UUID codigo;
+	@Column(name = "nombre")
+	private String nombre;
+	@ManyToOne
+	@JoinColumn (name = "pais")
+	private PaisEntity pais;
+}
